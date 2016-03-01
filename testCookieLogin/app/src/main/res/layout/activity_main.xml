@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+   <LinearLayout
+       android:id="@+id/ll_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="用户姓名："
+           />
+       <EditText
+           android:id="@+id/username"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="任文杰"
+           />
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_idnumber"
+        android:layout_below="@id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件号码："
+            />
+        <EditText
+            android:id="@+id/user_idnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="142702198404164512"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phonenumber"
+        android:layout_below="@id/ll_idnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码："
+            />
+        <EditText
+            android:id="@+id/phonenubmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13466397091"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_vcode"
+        android:layout_below="@id/ll_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码："
+            />
+        <EditText
+            android:id="@+id/vcode_site"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+        <ImageView
+            android:id="@+id/vcode_img"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_launcher"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phonevcode"
+        android:layout_below="@id/ll_vcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码："
+            />
+        <EditText
+            android:id="@+id/sms_vcode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+        <Button
+            android:id="@+id/getVcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取验证码"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll_phonevcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        />
+
+
+</RelativeLayout>
