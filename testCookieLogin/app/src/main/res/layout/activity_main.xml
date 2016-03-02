@@ -48,7 +48,7 @@
             android:id="@+id/user_idnumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="142702198404164512"
+            android:text=""
             />
 
     </LinearLayout>
@@ -72,7 +72,7 @@
             android:id="@+id/phonenubmer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="13466397091"
+            android:text=""
             />
     </LinearLayout>
 
